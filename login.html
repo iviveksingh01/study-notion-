@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Log-In</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="loginStyle.css">
+    <link rel="icon" type="image/x-icon" href="favicon tag.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <div class="nav">
+        <img src="tag image.png">
+        <div class="right">
+            <a href="/main.html">HOME</a>
+            <a href="/courses.html">COURSES</a>
+            <a href="/contact.html">ABOUT</a>
+            <a href="/loginPage.html">LOGIN</a>
+        </div>
+    </div>
+    <div class="alert1">
+        <h3 class="disclaimer"><b>Please! fill details correctly</b></h3>
+        <p class="alert"></p>
+    </div>
+    <!-- ----------------------------------signup-------------------------------------------------- -->
+    <div class="signup">
+        <center>
+            <h1>Hello...</h1>
+        </center>
+
+
+        <form>
+
+            <center>
+                <div id="main">
+                    <div>
+                        <h2 style="color:white">SignUp</h2>
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="First Name" name="fname" class="form-field inp" id="fn">
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Last Name" id="ln" name="lname" class="form-field inp">
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Email Id" id="ei" name="email" class="form-field inp">
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Mobile No" id="mn" name="mobile" class="form-field inp">
+                    </div>
+
+
+                    <div id="gen">
+                        Gender:<input type="radio" name="Button" class="form-field">Male <input type="radio"
+                            name="Button" class="form-field">Female <input type="radio" name="Button"
+                            class="form-field">Other
+                        <br>
+                        <br>
+                    </div>
+
+                    <div id="dob">
+                        Date Of Birth:<input type="date" id="d" placeholder="Select D.O.B." class="form-field inp">
+                    </div>
+
+                    <div>
+                        <input type="password" name="psswd" id="pass" placeholder="Enter Password" size="20"
+                            maxlength="10" class="form-field inp">
+                    </div>
+
+
+                    <div id="clg">
+                        College ID:<input type="file" id="fi" name="file">
+                    </div>
+
+
+                    <div id="gen">
+                        <input type="checkbox" class="form-field btn" name="myEligibility">I agree to the terms and
+                        conditions
+                    </div>
+
+
+                    <div>
+                        <center><input type="button" value="Submit" style="border-radius:5px ;" class="btn submitbtn">
+                            <input type="reset" value="Reset" style="border-radius:5px ;" class="btn">
+                        </center>
+                    </div>
+
+                </div>
+            </center>
+
+        </form>
+    </div>
+    <!-- -----------------------------------------------------login------------------------------------------------------ -->
+    <div class="login">
+        <center>
+            <h1>Welcome To StudyNotion...</h1>
+        </center>
+        <form style="padding: 1px; margin: -10px;">
+            <center>
+                <div id="z">
+                    <div>
+                        <h2 style="color:rgb(16, 6, 6)">Sign In</h2>
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="User Name" name="Uname" class="log" id="username">
+                        <br>
+                    </div>
+
+                    <div>
+                        <input type="password" placeholder="Password" name="Pass" class="log" id="password">
+                    </div>
+
+                    <div id="r">
+                        <input id="p" type="checkbox" name="myEligibility"><strong>Remember Me</strong>
+                    </div>
+
+                    <div id="log">
+                        <center><input id="log" type="button" value="Log In" style="border-radius:5px;">
+                        </center>
+                    </div>
+
+                    <div>
+                        <p style="font-size:18px ;">or login with</p>
+                    </div>
+
+                    <div class="icon">
+                        <div class="o">
+                            <ul>
+                                <li>
+                                    <a href="https://www.gmail.com/">
+                                        <img id="g" src="google.png">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.facebook.com/">
+                                        <img id="f" src="facebook icon.png">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://twitter.com/explore/">
+                                        <img id="t" src="twitter icon.png">
+                                    </a>
+                                </li>
+                        </div>
+                    </div>
+
+                    <div>
+                        <ol>
+                            <li>
+                                Forgot? <a id="n" href="http://127.0.0.1:5500/forgotPass.html"
+                                    target="popup">Password</a>
+                            </li>
+                            <br>
+                            <li>
+                                New Here? <a id="c" >&nbspRegister</a>
+                            </li>
+                        </ol>
+
+
+                    </div>
+
+                </div>
+            </center>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

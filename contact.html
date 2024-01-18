@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contact.css">
+    <link rel="icon" type="image/x-icon" href="favicon tag.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+
+</head>
+<body>
+
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+     <div class="nav">
+        <img src="tag image.png">
+        <div class="right">
+            <a href="/main.html">HOME</a>
+            <a href="/courses.html">COURSES</a>
+            <a href="/contact.html">ABOUT</a>
+            <a href="/login.html">LOGIN</a>
+        </div>
+        </div>
+
+
+     
+    <section id="back"> 
+        <div id="box">
+            <div id="contact">
+                <h1>Phone</h1>
+                <p>1234567890</p>
+                <h1>E-mail</h1>
+                <p>studynotion123@gmail.com</p>
+                <h1>Address</h1>
+                <p>S-7, Part 2 , Near DSP office , Bhojpur , Bihar, India</p>
+            </div>
+            <div id="form">
+                <h1>Send us a message</h1>
+                <div><input type="text" id="nm" class="field" placeholder="Enter your name"></div>
+                <div><input type="text" id="ph"  class="field" placeholder="Enter your phone number"></div>
+                <div><input type="text" id="em"  class="field" placeholder="Enter your email"></div>
+                <div><textarea placeholder="Type your message..." name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button id="rsubmit">Submit</button>
+            </div>
+        </div>
+        
+    </section>
+    <section id="newsletter">
+        <div>
+            <h1>Sign up to know more about us </h1>
+            <p>Get e-mail updates about our latest courses <span>and tests</span></p>
+        </div>
+        <div>
+            <button id="sign"><a href="/login.html">Sign Up</a></button>
+        </div>
+    </section>
+    <script>
+        $("#rsubmit").click(function(){
+            let valid=true;
+            $(".field").each(function() {
+                if($(this).val()===""){
+                        valid=false;
+                }
+            });
+            if(valid==true){
+                alert("Feedback submitted successfully");
+            }
+            else{
+                alert("Check something you left out!!");
+            }
+        })
+          
+    </script>
+</body>
+</html>
